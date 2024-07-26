@@ -25,6 +25,7 @@ import Users from './pages/User';
 import Hospitals from './pages/Hospitals';
 import Points from './pages/Points';
 import Login from './pages/Login';
+import CreateUser from './pages/CreateUser';
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
               <Route path="/users" element={<Users />} />
               <Route path="/hospitals" element={<Hospitals />} />
               <Route path="/points" element={<Points />} />
+              <Route path="/createuser" element={<CreateUser />} />
               <Route path="/login" element={<Login />} />  {/*is ko set krna ha k sidebar na show ho isme*/}
             </Routes> 
             {/* <Home /> */}

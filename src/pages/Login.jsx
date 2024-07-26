@@ -1,11 +1,10 @@
 import React from 'react';
-import loginBg from '../assets/video2.mp4';
 
 const Login = () => {
     return (
         <div className="relative h-screen">
             {/* Video Background */}
-            <video
+            {/* <video
                 autoPlay
                 loop
                 muted
@@ -13,7 +12,7 @@ const Login = () => {
             >
                 <source src={loginBg} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
+            </video> */}
 
             {/* Form Container */}
             <div className="flex justify-center items-center h-full ">

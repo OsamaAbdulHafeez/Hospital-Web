@@ -14,28 +14,32 @@ const Home = () => {
       description: "Total registered users",
       value: "1,245",
       color: 'red',
-      icon: <FaUser size={24} />
+      icon: <FaUser size={24} />,
+      link:'/users'
     },
     {
       title: "Hospitals",
       description: "Total Hospitals",
-      value: "1,245",
+      value: "25",
       color: 'slate',
-      icon: <LiaHospitalSolid size={24} />
+      icon: <LiaHospitalSolid size={24} />,
+      link:'/hospitals'
     },
     {
       title: "Ambulance",
       description: "Total Ambulance",
-      value: "1,245",
+      value: "180",
       color: 'slate',
-      icon: <FaAmbulance size={24} />
+      icon: <FaAmbulance size={24} />,
+      link:'/ambulance'
     },
     {
       title: "Points",
       description: "Total Points",
-      value: "1,245",
+      value: "95",
       color: 'orange',
-      icon: <CgEditBlackPoint size={24} />
+      icon: <CgEditBlackPoint size={24} />,
+      link:'/points'
     },
 
   ]
@@ -46,14 +50,15 @@ const Home = () => {
 
       <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {
-          dashboardCard.map((item) => {
+          dashboardCard.map((item,i) => {
             return (
               <Card
+              key={i}
                 title={item.title}
                 description={item.description}
                 value={item.value}
                 icon={item.icon}
-                color={item.color}
+                link={item.link}
               />
             )
           })
